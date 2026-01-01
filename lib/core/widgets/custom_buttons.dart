@@ -22,9 +22,9 @@ class CustomGeneralButton extends StatelessWidget {
           child: Text(
             text!,
             style: TextStyle(
-              fontSize: 14,
+              fontSize: 16,
               color: const Color(0xffffffff),
-              fontWeight: FontWeight.w500,
+              fontWeight: FontWeight.bold,
             ),
             textAlign: TextAlign.left,
           ),

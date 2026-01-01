@@ -27,7 +27,7 @@ class PageViewItem extends StatelessWidget {
           title!,
           style: TextStyle(
             fontSize: 20,
-            color: Color(0xff2f2e41),
+            color: Colors.black,
             fontWeight: FontWeight.w600,
           ),
           textAlign: TextAlign.left,
@@ -38,7 +38,7 @@ class PageViewItem extends StatelessWidget {
           style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.bold,
-            color: Color(0xff78787c),
+            color: Color(0xFF6D6D6F),
           ),
           textAlign: TextAlign.left,
         ),

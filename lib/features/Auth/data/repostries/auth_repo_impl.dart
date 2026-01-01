@@ -1,4 +1,4 @@
-import 'package:ecommerce_app/features/Auth/domain/respotries/auth_repo.dart';
+import 'package:ecommerce_app/features/Auth/domain/repostries/auth_repo.dart';
 
 class AuthRepoImpl extends AuthRepo {
   @override

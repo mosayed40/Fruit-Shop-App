@@ -31,7 +31,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
       children: [
         CustomPageView(pageController: pageController),
         Positioned(
-          bottom: SizeConfig.defaultSize! * 22,
+          bottom: SizeConfig.defaultSize! * 25,
           left: 0,
           right: 0,
           child: CustomIndicator(

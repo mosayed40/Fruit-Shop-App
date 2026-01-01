@@ -8,10 +8,13 @@ class CompleteInfoItem extends StatelessWidget {
     required this.text,
     this.maxLines,
     this.inputType,
+    this.onSaved,
   });
   final String text;
   final TextInputType? inputType;
   final int? maxLines;
+  final ValueSetter? onSaved;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,19 +22,23 @@ class CompleteInfoItem extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: 16,
             fontWeight: FontWeight.bold,
-            color: const Color(0xff0c0b0b),
+            color: Color(0xff0c0b0b),
             height: 1.5625,
           ),
-          textHeightBehavior: TextHeightBehavior(
+          textHeightBehavior: const TextHeightBehavior(
             applyHeightToFirstAscent: false,
           ),
           textAlign: TextAlign.center,
         ),
-        VerticalSpace(2),
-        CustomTextFormField(inputType: inputType, maxLines: maxLines),
+        const VerticalSpace(2),
+        CustomTextFormField(
+          onSaved: onSaved,
+          inputType: inputType,
+          maxLines: maxLines,
+        ),
       ],
     );
   }

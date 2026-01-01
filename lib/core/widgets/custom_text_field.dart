@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 class CustomTextFormField extends StatelessWidget {
   final TextInputType? inputType;
   final Widget? suffexIcon;
-  final void Function(String?)? onSaved;
-  final void Function(String?)? onChanged;
+  final ValueSetter? onSaved;
+  final ValueSetter? onChanged;
   final int? maxLines;
 
   const CustomTextFormField({
@@ -13,7 +13,7 @@ class CustomTextFormField extends StatelessWidget {
     this.suffexIcon,
     this.onSaved,
     this.onChanged,
-    this.maxLines,
+    this.maxLines = 1,
   });
 
   @override
@@ -28,7 +28,7 @@ class CustomTextFormField extends StatelessWidget {
         fillColor: Colors.transparent,
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(8),
-          borderSide: BorderSide(color: Color(0xffcccccc)),
+          borderSide: const BorderSide(color: Color(0xffcccccc)),
         ),
       ),
     );

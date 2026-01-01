@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917115441726",
+    "project_id": "fruit-shop-app-33e24",
+    "storage_bucket": "fruit-shop-app-33e24.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917115441726:android:557da8b34be15cf500b76f",
+        "android_client_info": {
+          "package_name": "com.example.ecommerce_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvNjz37DTK0-Xihp_W6K0WiU6dqeOGNMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

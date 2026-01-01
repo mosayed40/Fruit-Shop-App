@@ -1,4 +1,5 @@
 import 'package:ecommerce_app/core/utils/size_config.dart';
+import 'package:ecommerce_app/core/widgets/custom_title_app.dart';
 import 'package:ecommerce_app/features/onBoarding/presentation/on_boarding_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -46,14 +47,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
         Spacer(),
         FadeTransition(
           opacity: fadingAnimation!,
-          child: Text(
-            'Fruit Market',
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 51,
-              color: const Color(0xffffffff),
-            ),
-          ),
+          child: CustomTitleApp(color: Colors.white),
         ),
         Container(
           margin: EdgeInsets.only(top: 50),

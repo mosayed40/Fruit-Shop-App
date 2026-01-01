@@ -8,16 +8,19 @@ class CompleteInformationBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return ListView(
       children: [
-        VerticalSpace(11),
-        CompleteInfoItem(text: 'Enter your name'),
-        VerticalSpace(2),
-        CompleteInfoItem(text: 'Enter your phone number'),
-        VerticalSpace(2),
-        CompleteInfoItem(maxLines: 5, text: 'Enter your address'),
-        VerticalSpace(6),
-        CustomGeneralButton(text: 'Login'),
+        const VerticalSpace(11),
+        const CompleteInfoItem(text: 'Enter your name'),
+        const VerticalSpace(2),
+        const CompleteInfoItem(
+          text: 'Enter your phone number',
+          inputType: TextInputType.number,
+        ),
+        const VerticalSpace(2),
+        const CompleteInfoItem(maxLines: 5, text: 'Enter your address'),
+        const VerticalSpace(6),
+        CustomGeneralButton(onTap: () {}, text: 'Login'),
       ],
     );
   }

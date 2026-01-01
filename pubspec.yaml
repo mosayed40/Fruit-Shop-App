@@ -28,14 +28,14 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
+  cupertino_icons: ^1.0.8
+  dots_indicator: ^4.0.1
+  firebase_core: ^4.3.0
   flutter:
     sdk: flutter
   flutter_bloc: ^9.1.1
   font_awesome_flutter: ^10.12.0
   font_awesome_icon_class: ^0.0.6
-  cupertino_icons: ^1.0.8
-  dots_indicator: ^4.0.1
-  firebase_core: ^4.2.1
   get: ^4.7.3
 
 dev_dependencies:
@@ -68,7 +68,6 @@ flutter:
     - family: Poppins
       fonts:
         - asset: assets/fonts/Poppins-Regular.ttf
-
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
