@@ -13,6 +13,7 @@ class FruitsMraket extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
+      theme: ThemeData(fontFamily: 'Poppins'),
       home: SplashView(),
     );
   }
